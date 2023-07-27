@@ -34,3 +34,31 @@ class Person{
         print(gender)
     }
 }
+
+
+
+class Bank {
+    
+    var depopsit : Int = 0
+    var palins : Int = 0
+    var withdrowl :Int = 0
+    
+    init(depopsit :Int,palins:Int,withdrowl :Int) {
+        self.depopsit = depopsit
+        self.palins = palins
+        self.withdrowl = withdrowl
+        
+        if depopsit != 0
+        {self.palins  = palins + depopsit }
+         else if withdrowl != 0
+        {self.palins = palins - withdrowl }
+        
+        self.depopsit = 0
+        self.withdrowl = 0
+    }
+    
+    
+    
+    
+    
+}
