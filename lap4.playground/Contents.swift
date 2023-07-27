@@ -49,16 +49,25 @@ class Bank {
         self.withdrowl = withdrowl
         
         if depopsit != 0
-        {self.palins  = palins + depopsit }
-         else if withdrowl != 0
-        {self.palins = palins - withdrowl }
-        
-        self.depopsit = 0
-        self.withdrowl = 0
+        {self.palins  = palins + depopsit
+            print(self.palins)
+        }
+        if withdrowl != 0
+        {self.palins = palins - withdrowl
+             print(self.palins)
+         }
+        print(self.palins)
+       
     }
+
     
     
     
     
     
 }
+
+
+var depopsit = Bank( depopsit :10,palins: 50,withdrowl: 0)
+
+
